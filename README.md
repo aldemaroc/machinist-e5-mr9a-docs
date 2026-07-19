@@ -81,7 +81,7 @@ This routes the 3.3V supply from the voltage regulator through C4 to pin 28, whi
 
 > **Critical observation:** The motherboard **must be connected to the PSU in standby mode** (PSU switched on, 24-pin and 8-pin CPU EPS connected, but the board **not powered on**). The standby power rail (VSB) supplies VCC to the BIOS chip. Without standby power, the CH341A reads only `0xFF` bytes.
 >
-> **Note:** When the clip was connected to the BIOS chip with the PSU in standby, the CH341A's buzzer emitted a **continuous beep** for the entire duration the clip was attached. This did **not** occur when the PSU was disconnected. The cause of this behavior is unknown, but it did not affect the read operation (the dump completed successfully and the data was verified as correct).
+> **Note:** When the clip was connected to the BIOS chip with the PSU in standby, the MR9A's buzzer emitted a **continuous beep** for the entire duration the clip was attached. This did **not** occur when the PSU was disconnected. The cause of this behavior is unknown, but it did not affect the read operation (the dump completed successfully and the data was verified as correct).
 
 The dump was performed as follows:
 
