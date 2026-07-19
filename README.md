@@ -138,7 +138,17 @@ The custom BIOS flash was **successful**. The system is **stable** with the foll
 - Lower CPU voltages under load, reducing power consumption and heat output
 - Improved multi-core performance from unlocked Turbo Boost
 - Full control over memory timings for RAM tuning
-- **Idle power consumption:** 39.8 W with Proxmox running (no VMs active, no GPU connected)
+
+**Idle power consumption:** 39.8 W at the wall outlet, measured with:
+  - Stock BIOS settings
+  - Intel Xeon E5-2650v4 installed
+  - One 16GB RDIMM installed
+  - Two NVMe drives installed
+  - **No GPU** installed (headless system)
+  - Proxmox running (no VMs active)
+  - PSU (with it's own fan) and a CPU fan
+
+  For video output, when needed, a GALAX GT 1030 EXOC was used. It draws +10W when installed.
 
 ## Repository Contents
 
